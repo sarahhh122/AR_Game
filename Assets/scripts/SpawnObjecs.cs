@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SpawnObjecrs : MonoBehaviour
+public class SpawnObjects : MonoBehaviour
 {
 
     public GameObject[] quizItemPrefabs; // Drag your 5 prefabs here
