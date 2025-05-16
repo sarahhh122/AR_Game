@@ -75,7 +75,7 @@ public class LilyManager : MonoBehaviour
     {
     while (!isDying)
     {
-        // wait random time before next shield :contentReference[oaicite:2]{index=2}
+        // wait random time before next shield 
         float wait = Random.Range(shieldMinInterval, shieldMaxInterval);
         yield return new WaitForSeconds(wait);
 
