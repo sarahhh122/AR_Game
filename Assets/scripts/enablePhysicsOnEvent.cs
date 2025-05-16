@@ -31,7 +31,6 @@ public class enablePhysicsOnEvent : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            // Optional: add particle or sound effect here
 
             // Add score safely
             var scoreManager = FindObjectOfType<ScoreManager>();
