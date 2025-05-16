@@ -38,6 +38,8 @@ public class RandomKeyPlacer : MonoBehaviour
                     break;
                    }
                 }
+// instantiate the key prefab at that position BUT will make sure they wont overlap
+
                  if (!close){
                     Instantiate(keyPrefab, spawnPosition, Quaternion.identity);
                     placedKeys.Add(spawnPosition);
