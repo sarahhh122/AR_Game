@@ -17,7 +17,7 @@ public class AndroidSpeechListener : MonoBehaviour, ISpeechToTextListener
     public void OnPartialResultReceived(string t){ }   
     public void OnError(string err, int code)
     {
-        Debug.LogWarning($"STT error {code}: {err}");
+        // Debug.LogWarning($"STT error {code}: {err}");
         SpeechToText.Start(this, false, false); // retry
     }
 
@@ -26,7 +26,7 @@ public class AndroidSpeechListener : MonoBehaviour, ISpeechToTextListener
         if (error != null) { OnError("", error.Value); return; }
 
         text = text.ToLower();
-        Debug.Log("STT heard: " + text);
+        // Debug.Log("STT heard: " + text);
 
         if (text.Contains("attack"))
             lily.OnVoiceAttack();
