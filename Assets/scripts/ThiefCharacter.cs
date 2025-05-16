@@ -45,7 +45,7 @@ void StealAndDisappear()
         CollectKey scoreManager = FindObjectOfType<CollectKey>();
         if (scoreManager != null)
         {
-            scoreManager.StealCollectedKeys(1); 
+            scoreManager.StealCollectedKeys(2); 
         }
 
         if (spawnedThief != null)
